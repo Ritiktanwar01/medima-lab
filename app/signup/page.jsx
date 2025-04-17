@@ -41,7 +41,7 @@ export default function SignupPage() {
     setIsLoading(true)
     try {
       // Make API call to register user
-      const response = await fetch("http://localhost:8000/api/auth/signup/", {
+      const response = await fetch("http://97.74.90.82:1200/api/auth/signup/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

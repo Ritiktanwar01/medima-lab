@@ -23,7 +23,7 @@ export default function TestsPage() {
   const fetchTests = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch(`http://localhost:8000/api/tests/?search=${searchQuery}`, {
+      const response = await fetch(`http://97.74.90.82:1200/api/tests/?search=${searchQuery}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -76,7 +76,7 @@ export default function TestsPage() {
     if (!confirm("Are you sure you want to delete this test?")) return
 
     try {
-      const response = await fetch(`http://localhost:8000/api/tests/${testId}/`, {
+      const response = await fetch(`http://97.74.90.82:1200/api/tests/${testId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

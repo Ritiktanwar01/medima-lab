@@ -50,7 +50,7 @@ export default function PatientRegistrationDialog({ open, onOpenChange, onSucces
     const fetchData = async () => {
       try {
         // Fetch doctors
-        const doctorsResponse = await fetch("http://localhost:8000/api/doctors", {
+        const doctorsResponse = await fetch("http://97.74.90.82:1200/api/doctors", {
           headers: {
             Authorization: `Bearer ${token}`, // Add token to request headers
           },
@@ -67,7 +67,7 @@ export default function PatientRegistrationDialog({ open, onOpenChange, onSucces
         }
 
         // Fetch tests
-        const testsResponse = await fetch("http://localhost:8000/api/tests", {
+        const testsResponse = await fetch("http://97.74.90.82:1200/api/tests", {
           headers: {
             Authorization: `Bearer ${token}`, // Add token to request headers
           },
@@ -134,7 +134,7 @@ export default function PatientRegistrationDialog({ open, onOpenChange, onSucces
       }
 
       // Save to database
-      const response = await fetch("http://localhost:8000/api/patients/", {
+      const response = await fetch("http://97.74.90.82:1200/api/patients/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

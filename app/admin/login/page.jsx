@@ -29,7 +29,7 @@ export default function AdminLoginPage() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:8000/api/admin/auth/", {
+      const response = await fetch("http://97.74.90.82:1200/api/admin/auth/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

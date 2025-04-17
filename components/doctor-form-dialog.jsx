@@ -56,7 +56,7 @@ export default function DoctorFormDialog({ open, onOpenChange, doctor = null, on
   const onSubmit = async (data) => {
     setIsLoading(true)
     try {
-      const url = doctor ? `http://localhost:8000/api/doctors/${doctor.id}/` : "http://localhost:8000/api/doctors/"
+      const url = doctor ? `http://97.74.90.82:1200/api/doctors/${doctor.id}/` : "http://97.74.90.82:1200/api/doctors/"
       const method = doctor ? "PUT" : "POST"
 
       const response = await fetch(url, {

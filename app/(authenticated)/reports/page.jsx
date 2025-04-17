@@ -26,7 +26,7 @@ export default function ReportsPage() {
   const fetchReports = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch(`http://localhost:8000/api/reports/?search=${searchQuery}&status=${statusFilter}`, {
+      const response = await fetch(`http://97.74.90.82:1200/api/reports/?search=${searchQuery}&status=${statusFilter}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

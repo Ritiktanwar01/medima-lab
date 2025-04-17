@@ -22,7 +22,7 @@ export default function PatientsPage() {
   const fetchPatients = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch(`http://localhost:8000/api/patients/?search=${searchQuery}`, {
+      const response = await fetch(`http://97.74.90.82:1200/api/patients/?search=${searchQuery}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -65,7 +65,7 @@ export default function PatientsPage() {
     if (!confirm("Are you sure you want to delete this patient?")) return
 
     try {
-      const response = await fetch(`http://localhost:8000/api/patients/${patientId}/`, {
+      const response = await fetch(`http://97.74.90.82:1200/api/patients/${patientId}/`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

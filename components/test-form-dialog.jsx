@@ -209,7 +209,7 @@ export default function TestFormDialog({ open, onOpenChange, test = null, onSucc
         })
       })
 
-      const url = test ? `http://localhost:8000/api/tests/${test.id}/` : "http://localhost:8000/api/tests/"
+      const url = test ? `http://97.74.90.82:1200/api/tests/${test.id}/` : "http://97.74.90.82:1200/api/tests/"
       const method = test ? "PUT" : "POST"
 
       const response = await fetch(url, {

@@ -30,7 +30,7 @@ export default function LoginPage() {
   const onSubmit = async (data) => {
     setIsLoading(true)
     try {
-      const response = await fetch("http://localhost:8000/api/auth/login/", {
+      const response = await fetch("http://97.74.90.82:1200/api/auth/login/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

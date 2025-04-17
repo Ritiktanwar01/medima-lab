@@ -189,7 +189,7 @@ export default function ReportFormDialog({ open, onOpenChange, onSuccess }) {
         date: new Date().toISOString(),
       }
 
-      const response = await fetch("http://localhost:8000/api/reports/", {
+      const response = await fetch("http://97.74.90.82:1200/api/reports/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -250,7 +250,7 @@ export default function ReportFormDialog({ open, onOpenChange, onSuccess }) {
         reportId: report._id,
       }
 
-      const response = await fetch("http://localhost:8000/api/receipts/", {
+      const response = await fetch("http://97.74.90.82:1200/api/receipts/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
